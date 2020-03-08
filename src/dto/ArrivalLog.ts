@@ -11,5 +11,6 @@ export default class ArrivalLog {
     this.captain = captain;
     this.vessel = vessel;
     this.port = port;
+    this.timestamp = new Date()
   }
 }
