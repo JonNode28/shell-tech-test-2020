@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArrivalLogService.test.ts should list all logs when no captain name is supplied 1`] = `
+Array [
+  ArrivalLog {
+    "captain": Captain {
+      "name": "Janeway",
+    },
+    "port": Port {
+      "name": "Earth",
+    },
+    "timestamp": 1970-01-01T00:00:00.001Z,
+    "vessel": Vessel {
+      "name": "Voyager",
+    },
+  },
+  ArrivalLog {
+    "captain": Captain {
+      "name": "Janeway",
+    },
+    "port": Port {
+      "name": "Mars",
+    },
+    "timestamp": 1970-01-01T00:00:00.001Z,
+    "vessel": Vessel {
+      "name": "Voyager",
+    },
+  },
+  ArrivalLog {
+    "captain": Captain {
+      "name": "Janeway",
+    },
+    "port": Port {
+      "name": "Jupiter",
+    },
+    "timestamp": 1970-01-01T00:00:00.001Z,
+    "vessel": Vessel {
+      "name": "Voyager",
+    },
+  },
+]
+`;
+
+exports[`ArrivalLogService.test.ts should save an arrival log so that it's retrievable 1`] = `
+Array [
+  ArrivalLog {
+    "captain": Captain {
+      "name": "Janeway",
+    },
+    "port": Port {
+      "name": "Earth",
+    },
+    "timestamp": 1970-01-01T00:00:00.000Z,
+    "vessel": Vessel {
+      "name": "Voyager",
+    },
+  },
+]
+`;
