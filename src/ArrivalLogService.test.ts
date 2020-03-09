@@ -31,7 +31,7 @@ describe('ArrivalLogService.test.ts', () => {
     resetDate(originalDate);
   });
 
-  it('should list all logs ordered descending by timestamp', () => {
+  it('should list all logs in descending order by timestamp', () => {
     const originalDate = mockDate(new Date(0));
     sut.save(new ArrivalLog(new Captain('Janeway'), new Vessel('Voyager'), new Port('Earth')));
     mockDate(new Date(2));
@@ -41,9 +41,9 @@ describe('ArrivalLogService.test.ts', () => {
     const result = sut.list();
     expect(result).not.toBeNull();
     expect(result).toHaveLength(3);
-    expect(result[0].port.name).toEqual('Earth');
+    expect(result[0].port.name).toEqual('Mars');
     expect(result[1].port.name).toEqual('Jupiter');
-    expect(result[2].port.name).toEqual('Mars');
+    expect(result[2].port.name).toEqual('Earth');
     resetDate(originalDate);
   });
 

@@ -11,6 +11,6 @@ export default class ArrivalLogService {
       .filter(log => log.captain.name === captainName) : this.arrivalLogs;
 
     return result
-      .sort((a, b) => a.timestamp.getTime() - b.timestamp.getTime());
+      .sort((a, b) => b.timestamp.getTime() - a.timestamp.getTime());
   }
 }
